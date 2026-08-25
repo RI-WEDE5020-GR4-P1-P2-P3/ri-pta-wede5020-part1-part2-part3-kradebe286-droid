@@ -1,0 +1,61 @@
+/* DreamDrive SA Website Styles */
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Website title */
+header h1 {
+    color: gold;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Main content */
+main {
+    padding: 30px;
+}
+
+/* Headings */
+h2 {
+    color: black;
+}
+
+h3 {
+    color: #B8860B;
+}
+
+/* Links */
+a {
+    color: #B8860B;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
