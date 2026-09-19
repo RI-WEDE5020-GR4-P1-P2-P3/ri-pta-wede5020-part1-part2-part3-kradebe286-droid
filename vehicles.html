@@ -2,44 +2,31 @@
 <html lang="en">
 
 <head>
-
-    <title>DreamDrive SA | Vehicles</title>
-
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamDrive SA - Vehicles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
-
         <h1>DreamDrive SA</h1>
-
         <p>Affordable and Reliable Car Rentals</p>
 
-        <!-- Navigation menu -->
         <nav>
-
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="vehicles.html">Vehicles</a> |
-            <a href="services.html">Services</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
-
         </nav>
-
     </header>
 
-
-    <!-- Main content -->
     <main>
 
-        <!-- Introduction -->
         <section>
-
             <h2>Our Vehicles</h2>
 
             <p>
@@ -52,157 +39,165 @@
                 Choose a vehicle below and send us an enquiry
                 if you are interested in renting it.
             </p>
-
         </section>
 
+        <div class="car-container">
 
-        <!-- Economy Hatchback -->
+            <section class="car-card">
+
+                <h3>Economy Hatchback</h3>
+
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="Economy-small.jpeg">
+
+                    <img
+                        src="Economy.jpeg"
+                        srcset="Economy-small.jpeg 600w,
+                                Economy.jpeg 1200w"
+                        sizes="(max-width: 600px) 100vw, 33vw"
+                        alt="Economy hatchback rental car">
+                </picture>
+
+                <p>Price: R450 per day</p>
+
+                <p>Seats: 5</p>
+
+                <p>Transmission: Automatic</p>
+
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    The economy hatchback is suitable for everyday
+                    travel and customers looking for an affordable
+                    rental option.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+
+            <section class="car-card">
+
+                <h3>Family Sedan</h3>
+
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="Sedan-small.jpeg">
+
+                    <img
+                        src="Sedan.jpeg"
+                        srcset="Sedan-small.jpeg 600w,
+                                Sedan.jpeg 1200w"
+                        sizes="(max-width: 600px) 100vw, 33vw"
+                        alt="Family sedan rental car">
+                </picture>
+
+                <p>Price: R550 per day</p>
+
+                <p>Seats: 5</p>
+
+                <p>Transmission: Automatic</p>
+
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    The family sedan provides comfortable space
+                    for families and customers travelling longer
+                    distances.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+
+            <section class="car-card">
+
+                <h3>Family SUV</h3>
+
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="SUV-small.jpeg">
+
+                    <img
+                        src="SUV.jpeg"
+                        srcset="SUV-small.jpeg 600w,
+                                SUV.jpeg 1200w"
+                        sizes="(max-width: 600px) 100vw, 33vw"
+                        alt="Family SUV rental vehicle">
+                </picture>
+
+                <p>Price: R750 per day</p>
+
+                <p>Seats: 5</p>
+
+                <p>Transmission: Automatic</p>
+
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    The family SUV provides additional space for
+                    passengers and luggage. It is suitable for
+                    family trips and group travel.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+
+            <section class="car-card">
+
+                <h3>Premium Sedan</h3>
+
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="Premium-small.jpeg">
+
+                    <img
+                        src="Premium.jpeg"
+                        srcset="Premium-small.jpeg 600w,
+                                Premium.jpeg 1200w"
+                        sizes="(max-width: 600px) 100vw, 33vw"
+                        alt="Premium sedan rental vehicle">
+                </picture>
+
+                <p>Price: R900 per day</p>
+
+                <p>Seats: 5</p>
+
+                <p>Transmission: Automatic</p>
+
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    The premium sedan is designed for customers
+                    looking for a more comfortable vehicle for
+                    business or special travel.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+        </div>
+
+
         <section>
-
-            <h2>Economy Hatchback</h2>
-
-            <img src="images/hatchback.jpg"
-                 alt="Economy hatchback rental car"
-                 width="300">
-
-            <p>
-                Price: R450 per day
-            </p>
-
-            <p>
-                Seats: 5
-            </p>
-
-            <p>
-                Transmission: Automatic
-            </p>
-
-            <p>
-                Fuel: Petrol
-            </p>
-
-            <p>
-                The economy hatchback is suitable for everyday
-                travel and customers looking for an affordable
-                rental option.
-            </p>
-
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-
-        </section>
-
-
-        <!-- Family Sedan -->
-        <section>
-
-            <h2>Family Sedan</h2>
-
-            <img src="images/sedan.jpg"
-                 alt="Family sedan rental car"
-                 width="300">
-
-            <p>
-                Price: R550 per day
-            </p>
-
-            <p>
-                Seats: 5
-            </p>
-
-            <p>
-                Transmission: Automatic
-            </p>
-
-            <p>
-                Fuel: Petrol
-            </p>
-
-            <p>
-                The family sedan provides comfortable space
-                for families and customers travelling longer
-                distances.
-            </p>
-
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-
-        </section>
-
-
-        <!-- Family SUV -->
-        <section>
-
-            <h2>Family SUV</h2>
-
-            <img src="images/suv.jpg"
-                 alt="Family SUV rental vehicle"
-                 width="300">
-
-            <p>
-                Price: R750 per day
-            </p>
-
-            <p>
-                Seats: 7
-            </p>
-
-            <p>
-                Transmission: Automatic
-            </p>
-
-            <p>
-                Fuel: Petrol
-            </p>
-
-            <p>
-                The family SUV provides additional space for
-                passengers and luggage. It is suitable for
-                family trips and group travel.
-            </p>
-
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-
-        </section>
-
-
-        <!-- Premium Sedan -->
-        <section>
-
-            <h2>Premium Sedan</h2>
-
-            <img src="images/premium.jpg"
-                 alt="Premium sedan rental vehicle"
-                 width="300">
-
-            <p>
-                Price: R900 per day
-            </p>
-
-            <p>
-                Seats: 5
-            </p>
-
-            <p>
-                Transmission: Automatic
-            </p>
-
-            <p>
-                Fuel: Petrol
-            </p>
-
-            <p>
-                The premium sedan is designed for customers
-                looking for a more comfortable vehicle for
-                business or special travel.
-            </p>
-
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-
-        </section>
-
-
-        <!-- Rental information -->
-        <section>
-
             <h2>Vehicle Rental Information</h2>
 
             <p>
@@ -217,24 +212,18 @@
                 process.
             </p>
 
-            <a href="enquiry.html">Make an Enquiry</a>
-
+            <p>
+                <a href="enquiry.html">Make an Enquiry</a>
+            </p>
         </section>
 
     </main>
 
-
-    <!-- Footer -->
     <footer>
-
         <p>DreamDrive SA</p>
-
         <p>© 2026 DreamDrive SA</p>
-
     </footer>
 
-
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
