@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DreamDrive SA | Vehicles</title>
-    
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Drive SA - Vehicles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,17 +18,16 @@
 
         <!-- Navigation -->
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="vehicles.html">Vehicles</a> |
-            <a href="services.html">Services</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
 
     </header>
 
-    <hr>
 
     <!-- Main Content -->
     <main>
@@ -39,81 +39,145 @@
             of individual, family and business customers.
         </p>
 
-        <hr>
 
-        <h3>Economy Hatchback</h3>
+        <!-- Vehicles -->
+        <div class="car-container">
 
-        <p>Price: R450 per day</p>
-        <p>Seats: 5</p>
-        <p>Transmission: Automatic</p>
-        <p>Fuel: Petrol</p>
+            <!-- Economy Hatchback -->
+            <section class="car-card">
 
-        <p>
-            A small and affordable vehicle suitable for city driving
-            and short trips.
-        </p>
+                <h3>Economy Hatchback</h3>
 
-        <p>
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-        </p>
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="images/Economy-small.jpeg">
 
-        <hr>
+                    <img src="images/Economy.jpeg"
+                         srcset="images/Economy-small.jpeg 600w,
+                                 images/Economy.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Economy hatchback car">
+                </picture>
 
-        <h3>Family Sedan</h3>
+                <p>Price: R450 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
 
-        <p>Price: R550 per day</p>
-        <p>Seats: 5</p>
-        <p>Transmission: Automatic</p>
-        <p>Fuel: Petrol</p>
+                <p>
+                    A small and affordable vehicle suitable for city driving
+                    and short trips.
+                </p>
 
-        <p>
-            A comfortable vehicle suitable for families and longer
-            journeys.
-        </p>
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
 
-        <p>
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-        </p>
+            </section>
 
-        <hr>
 
-        <h3>Family SUV</h3>
+            <!-- Family Sedan -->
+            <section class="car-card">
 
-        <p>Price: R750 per day</p>
-        <p>Seats: 5</p>
-        <p>Transmission: Automatic</p>
-        <p>Fuel: Petrol</p>
+                <h3>Family Sedan</h3>
 
-        <p>
-            A spacious vehicle suitable for families, travel and
-            longer journeys.
-        </p>
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="images/Sedan-small.jpeg">
 
-        <p>
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-        </p>
+                    <img src="images/Sedan.jpeg"
+                         srcset="images/Sedan-small.jpeg 600w,
+                                 images/Sedan.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family sedan car">
+                </picture>
 
-        <hr>
+                <p>Price: R550 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
 
-        <h3>Premium Sedan</h3>
+                <p>
+                    A comfortable vehicle suitable for families and longer
+                    journeys.
+                </p>
 
-        <p>Price: R900 per day</p>
-        <p>Seats: 5</p>
-        <p>Transmission: Automatic</p>
-        <p>Fuel: Petrol</p>
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
 
-        <p>
-            A comfortable vehicle suitable for business trips and
-            special occasions.
-        </p>
+            </section>
 
-        <p>
-            <a href="enquiry.html">Enquire About This Vehicle</a>
-        </p>
+
+            <!-- Family SUV -->
+            <section class="car-card">
+
+                <h3>Family SUV</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="images/SUV-small.jpeg">
+
+                    <img src="images/SUV.jpeg"
+                         srcset="images/SUV-small.jpeg 600w,
+                                 images/SUV.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family SUV car">
+                </picture>
+
+                <p>Price: R750 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    A spacious vehicle suitable for families, travel and
+                    longer journeys.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+
+            <!-- Premium Sedan -->
+            <section class="car-card">
+
+                <h3>Premium Sedan</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="images/Premium-small.jpeg">
+
+                    <img src="images/Premium.jpeg"
+                         srcset="images/Premium-small.jpeg 600w,
+                                 images/Premium.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Premium sedan car">
+                </picture>
+
+                <p>Price: R900 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    A comfortable vehicle suitable for business trips and
+                    special occasions.
+                </p>
+
+                <p>
+                    <a href="enquiry.html">Enquire About This Vehicle</a>
+                </p>
+
+            </section>
+
+        </div>
 
     </main>
 
-    <hr>
 
     <!-- Footer -->
     <footer>
