@@ -1,0 +1,120 @@
+/* General page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+
+/* Header */
+
+header {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Website title */
+
+header h1 {
+    margin: 0;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/* Navigation when mouse moves over a link */
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main content */
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Headings */
+
+h2 {
+    color: #111111;
+}
+
+
+/* Links */
+
+a {
+    color: #333333;
+}
+
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Forms */
+
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+
+/* Buttons */
+
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
