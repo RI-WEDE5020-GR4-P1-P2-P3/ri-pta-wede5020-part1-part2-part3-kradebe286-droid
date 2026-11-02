@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamDrive SA - Contact Us</title>
+
+    <title>Contact DreamDrive SA | Car Rental Support</title>
+
+    <meta name="description"
+          content="Contact DreamDrive SA for car rental enquiries, vehicle information and rental services in South Africa.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,14 +36,13 @@
             <h2>Contact DreamDrive SA</h2>
 
             <p>
-                Contact DreamDrive SA if you need more
-                information about our vehicles and rental
-                services.
+                Contact DreamDrive SA if you need more information
+                about our vehicles and rental services.
             </p>
 
             <p>
-                You can contact us by phone, email or by
-                completing the contact form below.
+                You can contact us by phone, email or by completing
+                the contact form below.
             </p>
         </section>
 
@@ -45,60 +50,31 @@
             <h2>Contact Details</h2>
 
             <p>Phone: 012 345 6789</p>
-
             <p>Email: info@dreamdrivesa.co.za</p>
-
             <p>Business Hours: Monday to Friday, 08:00 to 17:00</p>
         </section>
 
         <section>
-            <h2>Our Locations</h2>
+            <h2>Our Branches</h2>
 
             <h3>Pretoria Branch</h3>
-
-            <p>
-                Address: 100 Main Street, Pretoria, Gauteng
-            </p>
-
-            <p>
-                Phone: 012 345 6789
-            </p>
-
-            <p>
-                Opening Hours: Monday to Friday, 08:00 to 17:00
-            </p>
+            <p>Address: 100 Main Street, Pretoria, Gauteng</p>
+            <p>Phone: 012 345 6789</p>
+            <p>Opening Hours: Monday to Friday, 08:00 to 17:00</p>
 
             <h3>Johannesburg Branch</h3>
-
-            <p>
-                Address: 50 Market Street, Johannesburg, Gauteng
-            </p>
-
-            <p>
-                Phone: 011 234 5678
-            </p>
-
-            <p>
-                Opening Hours: Monday to Friday, 08:00 to 17:00
-            </p>
+            <p>Address: 50 Market Street, Johannesburg, Gauteng</p>
+            <p>Phone: 011 234 5678</p>
+            <p>Opening Hours: Monday to Friday, 08:00 to 17:00</p>
 
             <h3>Durban Branch</h3>
-
-            <p>
-                Address: 25 Beach Road, Durban, KwaZulu-Natal
-            </p>
-
-            <p>
-                Phone: 031 345 6789
-            </p>
-
-            <p>
-                Opening Hours: Monday to Friday, 08:00 to 17:00
-            </p>
+            <p>Address: 25 Beach Road, Durban, KwaZulu-Natal</p>
+            <p>Phone: 031 345 6789</p>
+            <p>Opening Hours: Monday to Friday, 08:00 to 17:00</p>
         </section>
 
         <section>
-            <h2>Our Locations</h2>
+            <h2>Find Our Locations</h2>
 
             <p>
                 DreamDrive SA has three fictional branches
@@ -107,33 +83,106 @@
 
             <iframe
                 src="https://www.google.com/maps?q=Pretoria%20South%20Africa&output=embed"
-                width="600"
+                width="100%"
                 height="350"
-                title="DreamDrive SA location map">
+                style="border:0;"
+                loading="lazy"
+                title="Map showing Pretoria, South Africa">
             </iframe>
         </section>
 
         <section>
             <h2>Send Us a Message</h2>
 
-            <form>
+            <p>
+                Complete the form below to prepare an email
+                to DreamDrive SA.
+            </p>
+
+            <form id="contactForm"
+                  action="mailto:info@dreamdrivesa.co.za"
+                  method="post"
+                  enctype="text/plain">
 
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required
+                       minlength="2"
+                       autocomplete="name">
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required
+                       autocomplete="email">
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       pattern="[0-9+ ]{10,15}"
+                       title="Enter a valid phone number"
+                       autocomplete="tel">
+
+                <label for="messageType">Type of Message:</label>
+
+                <select id="messageType"
+                        name="messageType"
+                        required>
+
+                    <option value="">Select a message type</option>
+                    <option value="General Enquiry">
+                        General Enquiry
+                    </option>
+                    <option value="Vehicle Information">
+                        Vehicle Information
+                    </option>
+                    <option value="Rental Services">
+                        Rental Services
+                    </option>
+                    <option value="Complaint">
+                        Complaint
+                    </option>
+                    <option value="Other">
+                        Other
+                    </option>
+                </select>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6"></textarea>
 
-                <input type="submit" value="Send Message">
-                <input type="reset" value="Clear">
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          required
+                          minlength="10"
+                          placeholder="Write your message here"></textarea>
+
+                <button type="submit">
+                    Prepare Email
+                </button>
+
+                <button type="reset">
+                    Clear Form
+                </button>
+
+                <p id="contactMessage"
+                   role="status"
+                   aria-live="polite"></p>
 
             </form>
+
+            <p>
+                Note: This form opens your email application.
+                No message is sent automatically.
+                Contact details are fictional for this
+                academic project.
+            </p>
         </section>
 
     </main>
@@ -146,5 +195,4 @@
     <script src="js/script.js"></script>
 
 </body>
-
 </html>

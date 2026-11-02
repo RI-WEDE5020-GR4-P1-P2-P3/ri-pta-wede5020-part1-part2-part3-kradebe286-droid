@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamDrive SA - Vehicles</title>
+
+    <title>Rental Vehicles and Availability | DreamDrive SA</title>
+
+    <meta name="description"
+          content="Explore affordable rental cars at DreamDrive SA. Compare vehicle prices, search vehicles and check rental availability.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,190 +36,265 @@
             <h2>Our Vehicles</h2>
 
             <p>
-                DreamDrive SA offers different vehicle options
-                for customers with different transportation
-                needs.
+                DreamDrive SA offers different rental vehicles
+                to suit your transportation needs.
             </p>
 
             <p>
-                Choose a vehicle below and send us an enquiry
-                if you are interested in renting it.
+                Browse our vehicles, compare prices and check
+                availability for your preferred rental dates.
             </p>
         </section>
+
+        <!-- Vehicle Search and Filtering -->
+
+        <section>
+            <h2>Find Your Perfect Rental Car</h2>
+
+            <p>
+                Search for a vehicle or choose your maximum
+                daily rental budget.
+            </p>
+
+            <label for="carSearch">Search Vehicles:</label>
+
+            <input type="search"
+                   id="carSearch"
+                   placeholder="Search for a vehicle">
+
+            <label for="priceFilter">
+                Maximum Daily Price:
+            </label>
+
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="500">Up to R500</option>
+                <option value="600">Up to R600</option>
+                <option value="800">Up to R800</option>
+                <option value="1000">Up to R1000</option>
+            </select>
+
+            <p id="filterMessage"
+               role="status"
+               aria-live="polite"></p>
+        </section>
+
+        <!-- Vehicle Cards -->
 
         <div class="car-container">
 
             <section class="car-card">
-
                 <h3>Economy Hatchback</h3>
 
                 <picture>
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="Economy-small.jpeg">
+                    <source media="(max-width: 600px)"
+                            srcset="Economy-small.jpeg">
 
-                    <img
-                        src="Economy.jpeg"
-                        srcset="Economy-small.jpeg 600w,
-                                Economy.jpeg 1200w"
-                        sizes="(max-width: 600px) 100vw, 33vw"
-                        alt="Economy hatchback rental car">
+                    <img src="Economy.jpeg"
+                         srcset="Economy-small.jpeg 600w,
+                                 Economy.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Economy hatchback rental car"
+                         loading="lazy">
                 </picture>
 
                 <p>Price: R450 per day</p>
-
                 <p>Seats: 5</p>
-
                 <p>Transmission: Automatic</p>
-
                 <p>Fuel: Petrol</p>
 
                 <p>
-                    The economy hatchback is suitable for everyday
-                    travel and customers looking for an affordable
-                    rental option.
+                    An affordable vehicle suitable for
+                    everyday travel.
                 </p>
 
-                <p>
-                    <a href="enquiry.html">Enquire About This Vehicle</a>
-                </p>
-
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="hatchback">
+                    Check Availability
+                </button>
             </section>
 
-
             <section class="car-card">
-
                 <h3>Family Sedan</h3>
 
                 <picture>
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="Sedan-small.jpeg">
+                    <source media="(max-width: 600px)"
+                            srcset="Sedan-small.jpeg">
 
-                    <img
-                        src="Sedan.jpeg"
-                        srcset="Sedan-small.jpeg 600w,
-                                Sedan.jpeg 1200w"
-                        sizes="(max-width: 600px) 100vw, 33vw"
-                        alt="Family sedan rental car">
+                    <img src="Sedan.jpeg"
+                         srcset="Sedan-small.jpeg 600w,
+                                 Sedan.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family sedan rental car"
+                         loading="lazy">
                 </picture>
 
                 <p>Price: R550 per day</p>
-
                 <p>Seats: 5</p>
-
                 <p>Transmission: Automatic</p>
-
                 <p>Fuel: Petrol</p>
 
                 <p>
-                    The family sedan provides comfortable space
-                    for families and customers travelling longer
-                    distances.
+                    A comfortable vehicle for families
+                    and longer journeys.
                 </p>
 
-                <p>
-                    <a href="enquiry.html">Enquire About This Vehicle</a>
-                </p>
-
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="sedan">
+                    Check Availability
+                </button>
             </section>
 
-
             <section class="car-card">
-
                 <h3>Family SUV</h3>
 
                 <picture>
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="SUV-small.jpeg">
+                    <source media="(max-width: 600px)"
+                            srcset="SUV-small.jpeg">
 
-                    <img
-                        src="SUV.jpeg"
-                        srcset="SUV-small.jpeg 600w,
-                                SUV.jpeg 1200w"
-                        sizes="(max-width: 600px) 100vw, 33vw"
-                        alt="Family SUV rental vehicle">
+                    <img src="SUV.jpeg"
+                         srcset="SUV-small.jpeg 600w,
+                                 SUV.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family SUV rental vehicle"
+                         loading="lazy">
                 </picture>
 
                 <p>Price: R750 per day</p>
-
                 <p>Seats: 5</p>
-
                 <p>Transmission: Automatic</p>
-
                 <p>Fuel: Petrol</p>
 
                 <p>
-                    The family SUV provides additional space for
-                    passengers and luggage. It is suitable for
+                    A spacious vehicle suitable for
                     family trips and group travel.
                 </p>
 
-                <p>
-                    <a href="enquiry.html">Enquire About This Vehicle</a>
-                </p>
-
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="suv">
+                    Check Availability
+                </button>
             </section>
 
-
             <section class="car-card">
-
                 <h3>Premium Sedan</h3>
 
                 <picture>
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="Premium-small.jpeg">
+                    <source media="(max-width: 600px)"
+                            srcset="Premium-small.jpeg">
 
-                    <img
-                        src="Premium.jpeg"
-                        srcset="Premium-small.jpeg 600w,
-                                Premium.jpeg 1200w"
-                        sizes="(max-width: 600px) 100vw, 33vw"
-                        alt="Premium sedan rental vehicle">
+                    <img src="Premium.jpeg"
+                         srcset="Premium-small.jpeg 600w,
+                                 Premium.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Premium sedan rental vehicle"
+                         loading="lazy">
                 </picture>
 
                 <p>Price: R900 per day</p>
-
                 <p>Seats: 5</p>
-
                 <p>Transmission: Automatic</p>
-
                 <p>Fuel: Petrol</p>
 
                 <p>
-                    The premium sedan is designed for customers
-                    looking for a more comfortable vehicle for
-                    business or special travel.
+                    A comfortable premium vehicle for
+                    business and special occasions.
                 </p>
 
-                <p>
-                    <a href="enquiry.html">Enquire About This Vehicle</a>
-                </p>
-
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="premium">
+                    Check Availability
+                </button>
             </section>
 
         </div>
 
+        <!-- Vehicle Availability Checker -->
+
+        <section id="availabilitySection">
+
+            <h2>Check Vehicle Availability</h2>
+
+            <p>
+                Select your preferred vehicle and rental dates.
+                We will calculate the estimated rental cost.
+            </p>
+
+            <form id="availabilityForm">
+
+                <label for="rentalVehicle">
+                    Select Vehicle:
+                </label>
+
+                <select id="rentalVehicle" required>
+                    <option value="">Choose a vehicle</option>
+                    <option value="hatchback">
+                        Economy Hatchback
+                    </option>
+                    <option value="sedan">
+                        Family Sedan
+                    </option>
+                    <option value="suv">
+                        Family SUV
+                    </option>
+                    <option value="premium">
+                        Premium Sedan
+                    </option>
+                </select>
+
+                <label for="pickupDate">
+                    Collection Date:
+                </label>
+
+                <input type="date"
+                       id="pickupDate"
+                       required>
+
+                <label for="returnDate">
+                    Return Date:
+                </label>
+
+                <input type="date"
+                       id="returnDate"
+                       required>
+
+                <button type="submit">
+                    Check Availability
+                </button>
+
+            </form>
+
+            <div id="availabilityResult"
+                 role="status"
+                 aria-live="polite">
+            </div>
+
+            <p>
+                Note: Availability and prices are demonstration
+                information for this academic project.
+                No real vehicle reservation is made here.
+            </p>
+
+        </section>
+
+        <!-- Rental Information -->
 
         <section>
             <h2>Vehicle Rental Information</h2>
 
             <p>
-                Rental prices shown on this website are
-                fictional estimates created for the academic
-                project.
+                Rental prices are fictional estimates
+                created for this academic project.
             </p>
 
             <p>
-                Vehicle availability and final rental prices
-                would need to be confirmed through the enquiry
-                process.
-            </p>
-
-            <p>
-                <a href="enquiry.html">Make an Enquiry</a>
+                A customer can select a vehicle,
+                check demonstration availability and
+                continue to the rental booking form.
             </p>
         </section>
 
@@ -227,5 +308,331 @@
     <script src="js/script.js"></script>
 
 </body>
+</html>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rental Vehicles and Availability | DreamDrive SA</title>
+
+    <meta name="description"
+          content="Explore affordable rental cars at DreamDrive SA. Compare prices, search vehicles and check demonstration rental availability.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DreamDrive SA</h1>
+        <p>Affordable and Reliable Car Rentals</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Our Vehicles</h2>
+
+            <p>
+                DreamDrive SA offers different rental vehicles
+                to suit your transportation needs.
+            </p>
+
+            <p>
+                Browse our vehicles, compare prices and check
+                availability for your preferred rental dates.
+            </p>
+        </section>
+
+        <!-- Vehicle Search and Filtering -->
+
+        <section>
+            <h2>Find Your Perfect Rental Car</h2>
+
+            <p>
+                Search for a vehicle or choose your maximum
+                daily rental budget.
+            </p>
+
+            <label for="carSearch">Search Vehicles:</label>
+
+            <input type="search"
+                   id="carSearch"
+                   placeholder="Search for a vehicle">
+
+            <label for="priceFilter">
+                Maximum Daily Price:
+            </label>
+
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="500">Up to R500</option>
+                <option value="600">Up to R600</option>
+                <option value="800">Up to R800</option>
+                <option value="1000">Up to R1000</option>
+            </select>
+
+            <p id="filterMessage"
+               role="status"
+               aria-live="polite"></p>
+        </section>
+
+        <!-- Vehicle Cards -->
+
+        <div class="car-container">
+
+            <section class="car-card">
+                <h3>Economy Hatchback</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="Economy-small.jpeg">
+
+                    <img src="Economy.jpeg"
+                         srcset="Economy-small.jpeg 600w,
+                                 Economy.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Economy hatchback rental car"
+                         loading="lazy">
+                </picture>
+
+                <p>Price: R450 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    An affordable vehicle suitable for
+                    everyday travel.
+                </p>
+
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="hatchback">
+                    Check Availability
+                </button>
+            </section>
+
+            <section class="car-card">
+                <h3>Family Sedan</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="Sedan-small.jpeg">
+
+                    <img src="Sedan.jpeg"
+                         srcset="Sedan-small.jpeg 600w,
+                                 Sedan.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family sedan rental car"
+                         loading="lazy">
+                </picture>
+
+                <p>Price: R550 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    A comfortable vehicle for families
+                    and longer journeys.
+                </p>
+
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="sedan">
+                    Check Availability
+                </button>
+            </section>
+
+            <section class="car-card">
+                <h3>Family SUV</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="SUV-small.jpeg">
+
+                    <img src="SUV.jpeg"
+                         srcset="SUV-small.jpeg 600w,
+                                 SUV.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Family SUV rental vehicle"
+                         loading="lazy">
+                </picture>
+
+                <p>Price: R750 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    A spacious vehicle suitable for
+                    family trips and group travel.
+                </p>
+
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="suv">
+                    Check Availability
+                </button>
+            </section>
+
+            <section class="car-card">
+                <h3>Premium Sedan</h3>
+
+                <picture>
+                    <source media="(max-width: 600px)"
+                            srcset="Premium-small.jpeg">
+
+                    <img src="Premium.jpeg"
+                         srcset="Premium-small.jpeg 600w,
+                                 Premium.jpeg 1200w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Premium sedan rental vehicle"
+                         loading="lazy">
+                </picture>
+
+                <p>Price: R900 per day</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Fuel: Petrol</p>
+
+                <p>
+                    A comfortable premium vehicle for
+                    business and special occasions.
+                </p>
+
+                <button type="button"
+                        class="select-car"
+                        data-vehicle="premium">
+                    Check Availability
+                </button>
+            </section>
+
+        </div>
+
+        <!-- Vehicle Availability Checker -->
+
+        <section id="availabilitySection">
+
+            <h2>Check Vehicle Availability</h2>
+
+            <p>
+                Select your preferred vehicle and rental dates.
+                We will calculate the estimated rental cost.
+            </p>
+
+            <form id="availabilityForm">
+
+                <label for="rentalVehicle">
+                    Select Vehicle:
+                </label>
+
+                <select id="rentalVehicle" required>
+                    <option value="">Choose a vehicle</option>
+                    <option value="hatchback">Economy Hatchback</option>
+                    <option value="sedan">Family Sedan</option>
+                    <option value="suv">Family SUV</option>
+                    <option value="premium">Premium Sedan</option>
+                </select>
+
+                <label for="pickupDate">
+                    Collection Date:
+                </label>
+
+                <input type="date"
+                       id="pickupDate"
+                       required>
+
+                <label for="returnDate">
+                    Return Date:
+                </label>
+
+                <input type="date"
+                       id="returnDate"
+                       required>
+
+                <button type="submit">
+                    Check Availability
+                </button>
+
+            </form>
+
+            <div id="availabilityResult"
+                 role="status"
+                 aria-live="polite"></div>
+
+            <p>
+                Note: Availability and prices are demonstration
+                information for this academic project.
+                No real vehicle reservation is made here.
+            </p>
+
+        </section>
+
+        <!-- Rental Information -->
+
+        <section>
+            <h2>Vehicle Rental Information</h2>
+
+            <p>
+                Rental prices are fictional estimates
+                created for this academic project.
+            </p>
+
+            <p>
+                Customers can select a vehicle, check
+                demonstration availability and continue
+                to the rental booking form.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Vehicle Image Lightbox -->
+
+    <div id="vehicleLightbox"
+         class="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Vehicle image preview"
+         aria-hidden="true">
+
+        <button type="button"
+                class="lightbox-close"
+                id="closeLightbox"
+                aria-label="Close image preview">
+            &times;
+        </button>
+
+        <img id="lightboxImage"
+             src=""
+             alt="Enlarged rental vehicle">
+
+        <p id="lightboxCaption"
+           class="lightbox-caption"></p>
+
+    </div>
+
+    <footer>
+        <p>DreamDrive SA</p>
+        <p>© 2026 DreamDrive SA</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>

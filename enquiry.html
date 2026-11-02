@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamDrive SA - Enquiry</title>
+
+    <title>Vehicle Booking | DreamDrive SA</title>
+
+    <meta name="description"
+          content="Enter your rental details and view an estimated booking summary for DreamDrive SA vehicles.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,76 +33,130 @@
     <main>
 
         <section>
-            <h2>Vehicle Rental Enquiry</h2>
+            <h2>Vehicle Rental Booking</h2>
 
             <p>
-                Complete the form below if you are interested
-                in renting a vehicle from DreamDrive SA.
+                Complete the form below to prepare your
+                vehicle rental booking.
             </p>
 
             <p>
-                Please provide your details and rental
-                requirements so we can respond to your enquiry.
+                You can select a vehicle and enter your
+                rental dates to calculate the estimated cost.
             </p>
         </section>
 
         <section>
-            <h2>Enquiry Form</h2>
+            <h2>Booking Details</h2>
 
-            <form>
+            <form id="bookingForm" action="#" method="post">
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="bookingName">Full Name:</label>
+                <input type="text"
+                       id="bookingName"
+                       name="name"
+                       minlength="2"
+                       required>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="bookingEmail">Email Address:</label>
+                <input type="email"
+                       id="bookingEmail"
+                       name="email"
+                       required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label for="bookingPhone">Phone Number:</label>
+                <input type="tel"
+                       id="bookingPhone"
+                       name="phone"
+                       pattern="0[0-9]{9}"
+                       title="Enter a 10-digit South African phone number starting with 0"
+                       required>
 
-                <label for="vehicle">Preferred Vehicle:</label>
+                <label for="bookingVehicle">Select Vehicle:</label>
 
-                <select id="vehicle" name="vehicle">
-
+                <select id="bookingVehicle"
+                        name="vehicle"
+                        required>
                     <option value="">Select a vehicle</option>
                     <option value="hatchback">Economy Hatchback</option>
                     <option value="sedan">Family Sedan</option>
                     <option value="suv">Family SUV</option>
                     <option value="premium">Premium Sedan</option>
-
                 </select>
 
-                <label for="startDate">Rental Start Date:</label>
-                <input type="date" id="startDate" name="startDate" required>
+                <label for="bookingStartDate">
+                    Collection Date:
+                </label>
 
-                <label for="endDate">Rental End Date:</label>
-                <input type="date" id="endDate" name="endDate" required>
+                <input type="date"
+                       id="bookingStartDate"
+                       name="startDate"
+                       required>
 
-                <label for="message">Additional Requirements:</label>
+                <label for="bookingEndDate">
+                    Return Date:
+                </label>
 
-                <textarea id="message"
+                <input type="date"
+                       id="bookingEndDate"
+                       name="endDate"
+                       required>
+
+                <label for="pickupBranch">
+                    Collection Branch:
+                </label>
+
+                <select id="pickupBranch"
+                        name="branch"
+                        required>
+                    <option value="">Select a branch</option>
+                    <option value="Pretoria">Pretoria</option>
+                    <option value="Johannesburg">Johannesburg</option>
+                    <option value="Durban">Durban</option>
+                </select>
+
+                <label for="bookingMessage">
+                    Additional Requirements:
+                </label>
+
+                <textarea id="bookingMessage"
                           name="message"
-                          rows="6"></textarea>
+                          rows="5"></textarea>
 
-                <input type="submit" value="Submit Enquiry">
-                <input type="reset" value="Clear Form">
+                <button type="submit">
+                    Review Booking
+                </button>
+
+                <button type="reset">
+                    Clear Form
+                </button>
 
             </form>
+
+            <div id="bookingResult"
+                 role="status"
+                 aria-live="polite">
+            </div>
+
         </section>
 
         <section>
-            <h2>Rental Information</h2>
+            <h2>Important Rental Information</h2>
 
             <p>
-                Rental prices and vehicle availability will
-                need to be confirmed before a rental is
-                finalised.
+                Rental prices and availability are fictional
+                and used for this academic website project.
             </p>
 
             <p>
-                This enquiry form is part of the fictional
-                DreamDrive SA website created for the
-                academic project.
+                Reviewing a booking does not reserve a vehicle,
+                process a payment or send customer details.
+            </p>
+
+            <p>
+                <a href="vehicles.html">
+                    Return to Vehicle Availability
+                </a>
             </p>
         </section>
 
@@ -110,5 +170,4 @@
     <script src="js/script.js"></script>
 
 </body>
-
 </html>

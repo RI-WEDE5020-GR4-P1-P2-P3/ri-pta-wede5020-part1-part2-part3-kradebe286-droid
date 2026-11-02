@@ -1,5 +1,5 @@
-/* Dream Drive SA - CSS Styling */
 
+/* DreamDrive SA - CSS Styling */
 
 /* CSS Reset */
 
@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /* Base Style */
 
@@ -30,7 +29,6 @@ a {
     text-decoration: none;
 }
 
-
 /* Header */
 
 header {
@@ -44,7 +42,6 @@ header h1 {
     margin-bottom: 1rem;
 }
 
-
 /* Navigation */
 
 nav {
@@ -52,6 +49,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -62,7 +60,6 @@ nav a {
 nav a:hover {
     color: #aaaaaa;
 }
-
 
 /* Main Content */
 
@@ -86,7 +83,6 @@ p {
     margin-bottom: 1rem;
 }
 
-
 /* Desktop Car Layout */
 
 .car-container {
@@ -107,6 +103,7 @@ p {
     width: 100%;
     height: auto;
     border-radius: 6px;
+    transition: transform 0.3s ease;
 }
 
 .car-card h3 {
@@ -116,7 +113,6 @@ p {
 .car-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
-
 
 /* Buttons */
 
@@ -137,7 +133,6 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
-
 
 /* Forms */
 
@@ -169,7 +164,6 @@ textarea {
     min-height: 120px;
 }
 
-
 /* Focus Effects */
 
 a:focus,
@@ -180,6 +174,69 @@ select:focus {
     outline: 2px solid #555555;
 }
 
+/* Vehicle Image Lightbox */
+
+.car-card picture {
+    display: block;
+    cursor: zoom-in;
+}
+
+.car-card picture:focus-visible {
+    outline: 3px solid #555555;
+    outline-offset: 4px;
+}
+
+.car-card picture:hover img {
+    transform: scale(1.02);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-caption {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: #cccccc;
+}
 
 /* Footer */
 
@@ -190,7 +247,6 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-
 
 /* Tablet */
 
@@ -203,9 +259,7 @@ footer {
     main {
         width: 92%;
     }
-
 }
-
 
 /* Mobile */
 
@@ -248,4 +302,17 @@ footer {
         padding: 1rem;
     }
 
+    .lightbox {
+        padding: 1rem;
+    }
+
+    .lightbox img {
+        max-width: 100%;
+        max-height: 65vh;
+    }
+
+    .lightbox-close {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
 }
