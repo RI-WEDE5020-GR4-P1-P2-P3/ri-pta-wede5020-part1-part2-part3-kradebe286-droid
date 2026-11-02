@@ -2,15 +2,15 @@
 
 ## Student Information
 
-Name: Your Full Name
+Name:karabo radebe
 
-Student Number: Your Student Number
+Student Number: ST10516681
 
-Subject: Your Subject Name
+Subject: WEB DEVELOPMET
 
-Subject Code: Your Subject Code
+Subject Code: WEDE
 
-Group: Your Group
+Group: 04
 
 ---
 
